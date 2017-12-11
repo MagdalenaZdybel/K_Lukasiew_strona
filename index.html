@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="kancelaria prawna">
+        <meta name="keywords" content="pomoc prawna, kancelaria"
+        <link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
+        <link rel="stylesheet" href="fonts/webfontkit-20171205-050421/stylesheet.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <div class="block_logo">
+        </div>
+        <div class="four_blocks_square">
+           <div id="rozwijane_foto">
+            </div>
+            <div id="foto_kasia">
+            </div>
+            
+            <div id="kontakt">
+                <p>Kontakt</p>
+            </div>
+            <div id="rozwijane_kontakt">
+            </div>
+            
+            <div id="o_kancelarii">
+                <p>O kancelarii</p>
+            </div>
+            <div id="rozwijany_o_kancelarii">
+            </div>
+
+            <div id="sentencja">
+                <p>“Sed ut perspic <br/>
+            iatis undeonis <br/>
+                inatus error <br/>
+                voluptatem.”</p>
+            </div>
+        </div>
+    <div class="klienci_indywidualni_calosc_do_rozwijanego">   
+        <div class="two_blocks_rectangle">
+            <div id="rozwijany_klienci_indywidualni">
+            </div>
+            <div id="rozwijany_klienci_biznesowi">
+            </div>
+            <div id="rozwijany_rozwody">
+            </div>
+            <div id="rozwijany_biezace_problemy">
+            </div>
+            <div id="rozwijany_it">
+            </div>
+            <div id="rozwijany_prawo_budowlane">
+            </div>
+            
+            
+            <div id="klienci_indywidualni">
+                <p>Klienci indywidualni</p>
+            </div>
+
+            <div id="klienci_biznesowi">
+                <p>Klienci biznesowi</p>
+            </div>
+        </div>
+        
+        <div class="four_blocks_row">
+            
+            <div id="rozwody">
+                <p>Rozwody <br/>i sprawy rodzinne</p>
+            </div>
+            <div id="biezace_problemy">
+                <p>Bieżące problemy prawne</p>
+            </div>
+            <div id="it">
+                <p>IT</p>    
+            </div>
+            <div id="prawo_budowlane">
+                <p>Prawo <br/>
+                budowlane</p>
+            </div>
+        </div>
+    </div>     
+        </div>
+    <!-- -------- elementy rozwijane do "four_blocks_square" -----  ----->
+        <div class="rozwijany kontakt"></div>
+        <div class="rozwijane_o_kancelarii"></div>
+    
+    <!-- -------- elementy rozwijane do "two_blocks_rectangle" -----  ----->
+        <div class="rozwijane_klienci_indywidualni"></div>
+        <div class="rozwijany_klienci_biznesowi"></div>
+    
+    <!-- -------- elementy rozwijane do "four_blocks_row" -----  ----->
+        <div class="rozwijane_rozwody"></div>
+        <div class="rozwijany_biezace_problemy"></div>
+        <div class="rozwijane_it"></div>
+        <div class="rozwijane_prawo_budowlane"></div>
+    
+    <footer>
+        <p>&copy; Kancelaria Łukasiewicz 2016, Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script type="application/javascript">
+        $(document).ready(function() {
+                
+            
+            $("#foto_kasia").click(function() {
+                $("#rozwijane_foto").show();
+                $("#foto_kasia").hide();
+                $("#kontakt").hide();
+                $("#o_kancelarii").hide();
+                $("#sentencja").hide();
+            });
+            
+            $("#rozwijane_foto").click(function() {
+                $("#rozwijane_foto").hide();
+                $("#foto_kasia").show();
+                $("#kontakt").show();
+                $("#o_kancelarii").show();
+                $("#sentencja").show();
+            });
+            
+            $("#kontakt").click(function() {
+                $("#rozwijane_kontakt").show();
+                $("#foto_kasia").hide();
+                $("#kontakt").hide();
+                $("#o_kancelarii").hide();
+                $("#sentencja").hide();
+            });
+            
+            $("#rozwijane_kontakt").click(function() {
+                $("#rozwijane_kontakt").hide();
+                $("#foto_kasia").show();
+                $("#kontakt").show();
+                $("#o_kancelarii").show();
+                $("#sentencja").show();
+            });
+            
+            $("#o_kancelarii").click(function() {
+                $("#rozwijany_o_kancelarii").show();
+                $("#o_kancelarii").hide();
+                $("#sentencja").hide();
+            });
+            
+            $("#rozwijany_o_kancelarii").click(function() {
+                $("#rozwijany_o_kancelarii").hide();
+                $("#klienci_biznesowi").show();
+                $("#o_kancelarii").show();
+                $("#sentencja").show();
+            });
+            
+            $("#klienci_indywidualni").click(function() {
+                $("#rozwijany_klienci_indywidualni").show();
+                $("#klienci_indywidualni").hide();
+                $("#klienci_biznesowi").hide();
+                $("#rozwody").hide();
+                $("#biezace_problemy").hide();
+                $("#it").hide();
+                $("#prawo_budowlane").hide();
+            });
+            
+            $("#rozwijany_klienci_indywidualni").click(function() {
+                $("#rozwijany_klienci_indywidualni").hide();
+                $("#klienci_indywidualni").show();
+                $("#klienci_biznesowi").show();
+                $("#rozwody").show();
+                $("#biezace_problemy").show();
+                $("#it").show();
+                $("#prawo_budowlane").show();
+            });
+            
+            $("#klienci_biznesowi").click(function() {
+                $("#rozwijany_klienci_biznesowi").show();
+                $("#klienci_indywidualni").hide();
+                $("#klienci_biznesowi").hide();
+                $("#rozwody").hide();
+                $("#biezace_problemy").hide();
+                $("#it").hide();
+                $("#prawo_budowlane").hide();
+            });
+            
+            $("#rozwijany_klienci_biznesowi").click(function() {
+                $("#rozwijany_klienci_biznesowi").hide();
+                $("#klienci_indywidualni").show();
+                $("#klienci_biznesowi").show();
+                $("#rozwody").show();
+                $("#biezace_problemy").show();
+                $("#it").show();
+                $("#prawo_budowlane").show();
+            });
+            
+            $("#rozwody").click(function() {
+                $("#rozwijany_rozwody").show();
+                $("#klienci_indywidualni").hide();
+                $("#klienci_biznesowi").hide();
+                $("#rozwody").hide();
+                $("#biezace_problemy").hide();
+                $("#it").hide();
+                $("#prawo_budowlane").hide();
+            });
+            
+            $("#rozwijany_rozwody").click(function() {
+                $("#rozwijany_rozwody").hide();
+                $("#rozwody").show();
+                $("#klienci_indywidualni").show();
+                $("#klienci_biznesowi").show();
+                $("#biezace_problemy").show();
+                $("#it").show();
+                $("#prawo_budowlane").show();
+            });
+            $("#biezace_problemy").click(function() {
+                $("#rozwijany_biezace_problemy").show();
+                $("#klienci_indywidualni").hide();
+                $("#klienci_biznesowi").hide();
+                $("#rozwody").hide();
+                $("#biezace_problemy").hide();
+                $("#it").hide();
+                $("#prawo_budowlane").hide();
+            });
+            
+            $("#rozwijany_biezace_problemy").click(function() {
+                $("#rozwijany_biezace_problemy").hide();
+                $("#rozwody").show();
+                $("#klienci_indywidualni").show();
+                $("#klienci_biznesowi").show();
+                $("#biezace_problemy").show();
+                $("#it").show();
+                $("#prawo_budowlane").show();
+            });
+             $("#it").click(function() {
+                $("#rozwijany_it").show();
+                $("#klienci_indywidualni").hide();
+                $("#klienci_biznesowi").hide();
+                $("#rozwody").hide();
+                $("#biezace_problemy").hide();
+                $("#it").hide();
+                $("#prawo_budowlane").hide();
+            });
+            
+            $("#rozwijany_it").click(function() {
+                $("#rozwijany_it").hide();
+                $("#rozwody").show();
+                $("#klienci_indywidualni").show();
+                $("#klienci_biznesowi").show();
+                $("#biezace_problemy").show();
+                $("#it").show();
+                $("#prawo_budowlane").show();
+            });
+            $("#prawo_budowlane").click(function() {
+                $("#rozwijany_prawo_budowlane").show();
+                $("#klienci_indywidualni").hide();
+                $("#klienci_biznesowi").hide();
+                $("#rozwody").hide();
+                $("#biezace_problemy").hide();
+                $("#it").hide();
+                $("#prawo_budowlane").hide();
+            });
+            
+            $("#rozwijany_prawo_budowlane").click(function() {
+                $("#rozwijany_prawo_budowlane").hide();
+                $("#rozwody").show();
+                $("#klienci_indywidualni").show();
+                $("#klienci_biznesowi").show();
+                $("#biezace_problemy").show();
+                $("#it").show();
+                $("#prawo_budowlane").show();
+            });
+            
+        });
+    </script>
+</body>
+</html>
