@@ -60,8 +60,8 @@ body {
     background-image: url(../images/Lukasiewicz144_kadrowane_small.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 11.25em;
-    height: 11.25em;
+    width: 180px;
+    height: 180px;
     float: left;
 }
 /* ****************** rozwijane foto ***************/
@@ -75,16 +75,31 @@ body {
     z-index: 50;
     position: absolute;
 }
+#rozwijany_o_kancelarii #radca h4{
+    color: #353535;
+}
+main p {
+    font-size: 13pt;
+}
+main {
+    font-size: 11px;
+    color: #353535;
+    font-family: 'Ridley Grotesk';
+    padding-left: 38px;
+    padding-right: 38px;
+    text-align: justify;
+    line-height: 1.5;
+}
 #o_kancelarii {
     background-image: url(../images/icon_o_kancelarii.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    background-position-y: 2.7em;
+    background-position-y: 44%;
     background-color: #fff;
-    width: 11.25em;
-    height: 11.25em;
-    margin-top: 0.93em;
+    width: 180px;
+    width: 180px;
+    margin-top: 15px;
     float: left;
 }
 #o_kancelarii p {
@@ -105,57 +120,74 @@ body {
     position: absolute;
 }
 #rozwijany_o_kancelarii p {
-    font-size: 10.75px;
+font-size: 10.75px;
     color: #0084e1;
     font-family: 'Ridley Grotesk';
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding-left: 38px;
+    padding-right: 38px;
     text-align: justify;
-    padding-bottom: 1vh;
+    padding-bottom: 9px;
     line-height: 1.5;
 }
+.to_sprawia {
+    margin-top: -29px;
+}
 .gallup {
-    margin-top: 1vh;
+    margin-top: 9px;
+}
+#rozwijany_o_kancelarii .gallup {
+    color: #353535;
+    padding-top: 5px;
 }
 #rozwijany_o_kancelarii h4 {
     font-size: 13px;
     color: #0084e1;
     font-family: 'Ridley Grotesk';
-    padding-top: 1vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding-top: 9px;
+    padding-left: 38px;
+    padding-right: 38px;
     text-align: justify;
 }
-main {
-    font-size: 11px;
-    color: #0084e1;
+
+#rozwijane_kontakt h3 {
+    color: #fff;
+    font-size: 13pt;
     font-family: 'Ridley Grotesk';
-    /*padding-top: 7vh;*/
-    padding-left: 4vh;
-    padding-right: 4vh;
-    text-align: justify;
-    line-height: 1.5;
+    padding-top: 18px;
+    padding-left: 33px;
+    padding-right: 46px;
+    padding-bottom: 44px;
 }
 #kontakt {
     background-image: url(../images/icon_kontakt.png);
     background-repeat: no-repeat;
     background-size: 36%;
-    background-position: 3.77em;
-    background-position-y: 2.7em;
+    background-position: 50%;
+    background-position-y: 44%;
     background-color: #353535;
-    width: 11.25em;
-    height: 11.25em;
+    width: 180px;
+    height: 180px;
     float: right;
 }
 #kontakt p {
     font-family: "Ridley Grotesk";
     color: #fff;
     margin-top: 64%;
+    z-index: 50;
+}
+#schowany_nr {
+    font-size: 12pt;
+    font-family: Ridley Grotesk;
+    color: #0084e1;
+    margin-left: 33px;
+    background-color: #353535;
+    z-index: 50;
+    position: absolute;
+}
+.calosc_kontkat_p {
+    margin-top: 17px;
 }
 #rozwijane_kontakt {
-    /*background-image: url(../images/icon_kontakt.png);
-    background-repeat: no-repeat;
-    background-position: center;*/
     background-color: #353535;
     background-size: 20%;
     width: 375px;
@@ -163,29 +195,41 @@ main {
     display: none;
     z-index: 50;
     position: absolute;
+    text-align: justify;
+    text-decoration: none;
 }
-.adres p {
-    color: #fff;
+#rozwijane_kontakt a {
+    color: #0084e1;
     font-family: "Ridley Grotesk";
-    font-size: 11pt;
-    padding-left: 4vh;
+    font-size: 12pt;
     text-decoration: none;
     font-style: normal;
     text-align: justify;
-    margin-top: 2vh;
 }
-.email {
-    color: #0084e1; 
-    line-height: 1.5;
-    text-decoration: none;
-}
-.numer_tel {
+#rozwijane_kontakt a p.email {
     color: #0084e1;
-    text-decoration: none;
+    font-size: 11pt;
 }
+#rozwijane_kontakt p {
+    color: #fff;
+    font-family: "Ridley Grotesk";
+    font-size: 12pt;
+    text-decoration: none;
+    font-style: normal;
+    text-align: justify;
+    padding-left: 33px;
+    text-decoration: none;
+    padding-top: 3.5px;
+}
+ .ente {
+    margin-top: 18px;
+    }
+ .ente2 {
+    margin-top: 32px;
+    }
 iframe {
-    margin-left: 1em;
-    margin-top: 2em;
+    margin-left: 8px;
+    margin-top: 18px;
 }
 #rozwijane_kontakt img,
 #rozwijane_foto img,
@@ -193,8 +237,6 @@ iframe {
     top: 10px;
     right: 10px;
     position: absolute;
-    /*margin-top: 7px;
-    margin-left: 343px;*/
 }
 #rozwijany_klienci_indywidualni img,
 #rozwijany_klienci_biznesowi img,
@@ -208,16 +250,15 @@ iframe {
 }
 #sentencja {
     background-color: #0084e1;
-    width: 11.25em;
-    height: 11.25em;
-    margin-top: 0.93em;
+    width: 180px;
+    height: 180px;
+    margin-top: 15px;
     float: right;
 }
 #sentencja p {
     color: #fff;
-    padding-top: 5.4em;
-    line-height: 2em;
-    font-size: 14px;
+    padding-top: 48%;
+    font-size: 11pt;
 }
 /******************************dwa bloki two_blocks_rectangle *************/
 .two_blocks_rectangle {
@@ -238,7 +279,7 @@ iframe {
     background-color: #0084e1;
     width: 375px;
     height: 180px;
-    margin-right: 0.93em;
+    margin-right: 15px;
     float: left;
 }
 #klienci_indywidualni p {
@@ -265,8 +306,8 @@ iframe {
     font-family: 'Ridley Grotesk';
     text-align: justify;
     line-height: 1.5;
-    padding-left: 4vh;
-    padding-right: 2vh;
+    padding-left: 33px;
+    padding-right: 37px;
 }
 .column {
     float: left;
@@ -276,14 +317,13 @@ iframe {
     font-size: 12px;
     font-family: 'Ridley Grotesk';
     text-align: justify;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding-left: 34px;
+    padding-right: 34px;
     line-height: 1.5;
 }
 #rozwijany_klienci_indywidualni ul,
 #rozwijany_klienci_biznesowi ul {
     text-align: justify;
-    margin-bottom: 0.5vh;
 }
 #rozwijany_klienci_indywidualni ul {
     color: #fff;
@@ -298,16 +338,18 @@ iframe {
     font-family: 'Ridley Grotesk';
     text-align: justify;
     line-height: 1.5;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding-left: 33px;
+    padding-right: 33px;
 }
-#rozwijany_klienci_biznesowi p,
-#rozwijany_biezace_problemy p,
 #rozwijany_rozwody p,
 #rozwijany_prawo_budowlane p {
-    color: #0084e1;
+    color: #000000;
 }
-#rozwijane_kontakt h3,
+#rozwijany_klienci_biznesowi p,
+#rozwijany_klienci_biznesowi li,
+#rozwijany_biezace_problemy p {
+        color: #fff;
+}
 #rozwijany_klienci_indywidualni h3,
 #rozwijany_klienci_biznesowi h3,
 #rozwijany_biezace_problemy h3,
@@ -317,7 +359,7 @@ iframe {
     font-size: 13pt;
     font-family: 'Ridley Grotesk';
     padding-top: 2vh;
-    padding-left: 35px;
+    padding-left: 33px;
     padding-right: 46px;
     padding-bottom: 2vh;
 }
@@ -329,7 +371,7 @@ iframe {
     font-size: 13pt;
     font-family: 'Ridley Grotesk';
     padding-top: 2vh;
-    padding-left: 35px;
+    padding-left: 32px;
     padding-right: 46px;
     padding-bottom: 2vh;
 }
@@ -372,8 +414,8 @@ iframe {
     background-position: center;
     background-color: #fff;
     background-position-y: 40px;
-    width: 11.25em;
-    height: 11.25em;
+    width: 180px;
+    height: 180px;
     float: left;
     margin-right: 15px;
 }
@@ -393,6 +435,9 @@ iframe {
     z-index: 50;
     position: relative;
 }
+#rozwijany_rozwody li {
+    color: #353535;
+}
 #biezace_problemy {
     background-image: url(../images/icon_biezace_problemy.png);
     background-repeat: no-repeat;
@@ -400,8 +445,8 @@ iframe {
     background-position: center;
     background-position-y: 40px;
     background-color: #353535;
-    width: 11.25em;
-    height: 11.25em;
+    width: 180px;
+    height: 180px;
     float: left;
     margin-right: 15px;
 }
@@ -429,8 +474,8 @@ iframe {
     background-position: center;
     background-position-y: 45px;
     background-color: #0084e1;
-    width: 11.25em;
-    height: 11.25em;
+    width: 180px;
+    height: 180px;
     float: left;
     margin-right: 15px;
 }
@@ -458,8 +503,8 @@ iframe {
     background-position: center;
     background-position-y: 40px;
     background-color: #fff;
-    width: 11.25em;
-    height: 11.25em;
+    width: 180px;
+    height: 180px;
     float: left;
 }
 #prawo_budowlane p {
@@ -478,6 +523,9 @@ iframe {
     z-index: 50;
     position: relative;
 }
+#rozwijany_prawo_budowlane ul {
+    color:  #353535;
+}
 ul {
     color: #0084e1;
     font-size: 12px;
@@ -486,9 +534,7 @@ ul {
     line-height: 1.5;
     padding-left: 7vh;
     padding-right: 4vh;
-    /*padding-top: 2vh;*/
     }
-
 #rozwijany_it ul {
     color: #fff;
     text-align: justify;
@@ -514,7 +560,7 @@ footer p {
 
 @media only screen and (max-width: 900px) {
     html {
-        height: 1590px;
+        height: 1418px;
     }
     .container {
         width: 375px;
@@ -522,6 +568,16 @@ footer p {
         margin-right: auto;
         padding-top: 15px;
     }
+    .block_logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+    width: 375px;
+    height: 180px;
+    float: left;
+    margin-bottom: 15px;
+}
     #rozwijany_o_kancelarii {
         margin-bottom: 15px;    
     }    
@@ -534,6 +590,12 @@ footer p {
         text-align: justify;
         line-height: 1.5;
     }
+    #rozwijany_o_kancelarii h4 {
+        padding-top: 0.5vh;
+    }
+    .to_sprawia {
+    margin-top: -2.8vh;
+    }
     .two_blocks_rectangle {
         width: 375px;
         height: 390px;
@@ -543,7 +605,7 @@ footer p {
         margin-right: 0;
     }
     #klienci_indywidualni p {
-        margin-top: 0;
+        margin-top: 36%;
         text-align: center;
     }
     #rozwijany_klienci_indywidualni {
@@ -556,6 +618,20 @@ footer p {
         z-index: 50;
         margin-top: 15px;
     }
+    #rozwijane_kontakt h3,
+    #rozwijany_klienci_indywidualni h3,
+    #rozwijany_klienci_biznesowi h3,
+    #rozwijany_biezace_problemy h3,
+    #rozwijany_it h3,
+    #rozwijany_biezace_problemy h3 {
+        color: #fff;
+        font-size: 13pt;
+        font-family: 'Ridley Grotesk';
+        padding-top: 4vh;
+        padding-left: 35px;
+        padding-right: 46px;
+        padding-bottom: 3vh;
+}
     #klienci_biznesowi {
         margin-top: 15px;
         text-align: center;
@@ -587,8 +663,8 @@ footer p {
     #rozwijany_biezace_problemy h3,
     #rozwijany_it h3,
     #rozwijany_prawo_budowlane h3 {
-        padding-top: 10vh;
-        padding-bottom: 5vh;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
     }
     #rozwijany_biezace_problemy {
         background-image: url(../images/icon_biezace_problemy.png);
@@ -648,7 +724,7 @@ footer p {
 /*****************  320 ************** 320   *********************  320  ************************/
     @media only screen and (max-width: 320px){
         html {
-            height: 1240px;
+            height: 1088px;
     }
         .container {
             width: 290px;
@@ -659,8 +735,8 @@ footer p {
         .block_logo {
             background-size: 90%;
             width: 290px;
-            height: 290px;
-            /*margin-bottom: 0px;*/
+            height: 140px;
+            
         }
         .four_blocks_square {
             width: 290px;
@@ -669,7 +745,6 @@ footer p {
         #foto_kasia {
             width: 140px;
             height: 140px;
-            /*margin-right: 10px;*/
             float: left;
         }
         #rozwijane_foto {
@@ -678,8 +753,8 @@ footer p {
         #o_kancelarii {
             background-image: url(../images/icon_o_kancelarii.png);
             background-repeat: no-repeat;
-            background-size: 50%;
-            background-position-y: 1.9em;
+            background-size: 48%;
+            background-position-y: 31px;
             background-position-x: center;
             background-color: #fff;
             width: 140px;
@@ -704,12 +779,15 @@ footer p {
             margin-top: 10px;
             margin-left: 257px;
         }
+        ##rozwijany_o_kancelarii #radca h4 {
+            
+        }
         #kontakt {
             background-image: url(../images/icon_kontakt.png);
             background-repeat: no-repeat;
             background-size: 39%;
-            background-position: 2.7em;
-            background-position-y: 1.8em;
+            background-position: 54%;
+            background-position-y: 36%;
             background-color: #353535;
             width: 140px;
             height: 140px;
@@ -719,6 +797,7 @@ footer p {
             font-family: "Ridley Grotesk";
             color: #fff;
             margin-top: 61%;
+            
         }
         #rozwijane_kontakt {
             width: 290px;
@@ -726,23 +805,26 @@ footer p {
         }
         #rozwijane_kontakt h3 {
             padding-top: 6vh;
+            padding-left: 32px;
         }
         #rozwijane_kontakt img  {
-            margin-top: 10px;
+            margin-top: 13px;
             margin-left: 167px;
         }
-        .adres {
+        #rozwijane_kontakt p {
             line-height: 1.5;
             color: #fff;
             font-family: "Ridley Grotesk";
-            font-size: 14px;
-            padding-left: 5vh;
-            padding-top: 10vh;
+            font-size: 11pt;
+            padding-left: 33px;
             text-decoration: none;
             font-style: normal;
+            text-align: justify;
         }
-        .email {
-            line-height: 1.5;
+        #rozwijane_kontakt a p.email {
+            color: #0084e1;
+            font-size: 10pt;
+            padding-top: 16px;
         }
         #sentencja {
             background-color: #0084e1;
@@ -753,8 +835,41 @@ footer p {
         }
         #sentencja p {
             color: #fff;
-            padding-top: 4.5em;
+            padding-top: 48%;
             font-size: 10pt;
+        }
+        #rozwijany_o_kancelarii h4 {
+            padding-left: 33px;
+            font-size: 8.6pt;
+        }
+        .to_sprawia {
+            margin-top: -28px;
+        }
+        #rozwijany_o_kancelarii p {
+            font-size: 9.5px;
+            color: #0084e1;
+            font-family: 'Ridley Grotesk';
+            padding-left: 33px;
+            padding-right: 33px;
+            text-align: justify;
+        }
+        main {
+            font-size: 9.5px;
+            color: #353535;
+            font-family: 'Ridley Grotesk';
+            margin-top: -16px;
+            padding-left: 33px;
+            padding-right: 29px;
+            text-align: justify;
+            /*line-height: 1.5;*/
+        }
+        #rozwijany_o_kancelarii #radca h4 {
+            margin-left: 0;
+            padding-top: 5px;
+            padding-bottom: 18px;
+            font-size: 10.74px;
+            color: #353535;
+            text-align: left;
         }
         /******************************dwa bloki *************/
         .two_blocks_rectangle {
@@ -787,6 +902,31 @@ footer p {
             background-position-x: 231px;
             background-position-y: 528px;
         }
+        .ente {
+            margin-top: 6px;
+        }
+        .ente2 {
+            margin-top: 6px;
+        }
+        #rozwijany_rozwody h3, #rozwijany_prawo_budowlane h3, #rozwijany_o_kancelarii h3 {
+            color: #0084e1;
+            font-size: 13pt;
+            font-family: 'Ridley Grotesk';
+            /*padding-top: 2vh;
+            padding-left: 32px;
+            padding-right: 46px;
+            padding-bottom: 1vh;*/
+            padding-top: 19px;
+            padding-left: 33px;
+        }
+        #rozwijane_kontakt h3, #rozwijany_klienci_indywidualni h3, #rozwijany_klienci_biznesowi h3, #rozwijany_biezace_problemy h3, #rozwijany_it h3, #rozwijany_biezace_problemy h3 {
+            color: #fff;
+            font-size: 13pt;
+            font-family: 'Ridley Grotesk';
+            padding-top: 19px;
+            padding-left: 33px;
+            padding-right: 46px;
+        }
         #klienci_biznesowi {
             background-image: url(../images/icon_klienci_biznesowi.png);
             background-repeat: no-repeat;
@@ -810,13 +950,13 @@ footer p {
             background-position-x: 240px;
             background-position-y: 544px;
         }
+        .column p,
+        #rozwijany_klienci_biznesowi li {
+            font-size: 11px;
+        }
         #rozwijany_klienci_biznesowi h3 {
             padding-top: 19px;
-            padding-left: 4vh;
-        }
-        #rozwijany_klienci_biznesowi p {
-            padding-top: 1.0em;
-            line-height: 1.5;
+            padding-left: 33px;
         }
         li {
             line-height: 1.5;
@@ -852,8 +992,14 @@ footer p {
             background-position-y: 526px;
         }
         #rozwijany_rozwody h3 {
-            /*padding-top: 4vh;*/
-            padding-left: 4vh;
+            padding-top: 19px;
+            padding-left: 33px;
+        }
+        #rozwijany_rozwody p{
+            padding-left: 33px;
+        }
+        #rozwijany_biezace_problemy p {
+            padding-left: 33px;
         }
         #biezace_problemy {
             background-image: url(../images/icon_biezace_problemy.png);
@@ -880,7 +1026,11 @@ footer p {
             background-position-y: 526px;
         }
         #rozwijany_biezace_problemy h3 {
-            padding-left: 4vh;
+            padding-left: 33px;
+            padding-top: 19px;
+        }
+        #rozwijany_biezace_problemy p {
+            padding-left: 33px;
         }
         #it {
             background-image: url(../images/icon_IT.png);
@@ -909,7 +1059,7 @@ footer p {
             background-position-y: 541px;
         }
         #rozwijany_it p {
-            line-height: 1.5;
+            /*padding-top: 19px;*/
         }
         #prawo_budowlane {
             background-image: url(../images/icon_prawo_budowlane.png);
@@ -936,12 +1086,12 @@ footer p {
             background-position-y: 535px;
         }
         #rozwijany_prawo_budowlane h3 {
-            padding-left: 4vh;
-            padding-top: 6vh;
+            padding-left: 33px;
+            padding-top: 19px;
         }
         #rozwijany_prawo_budowlane p {
-            padding-top: 0;
-            line-height: 1.5;
+            padding-left: 32px;
+            font-size: 11px;
         }
         footer {
             font-size: 7pt;

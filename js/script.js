@@ -27,7 +27,8 @@ $(document).ready(function () {
         $("#sentencja").hide();
     });
 
-    $("#rozwijane_kontakt").click(function () {
+    $("#rozwijane_kontakt").click(function (event) {
+        event.stopPropagation();
         ukryj();
         $("#rozwijane_kontakt").hide();
         $("#foto_kasia").show();
@@ -81,23 +82,11 @@ $(document).ready(function () {
     $("#klienci_biznesowi").click(function () {
         ukryj();
         $("#rozwijany_klienci_biznesowi").show();
-        /*$("#klienci_indywidualni").hide();
-        $("#klienci_biznesowi").hide();
-        $("#rozwody").hide();
-        $("#biezace_problemy").hide();
-        $("#it").hide();
-        $("#prawo_budowlane").hide();*/
     });
 
     $("#rozwijany_klienci_biznesowi").click(function () {
         ukryj();
         $("#rozwijany_klienci_biznesowi").hide();
-        /*$("#klienci_indywidualni").show();
-        $("#klienci_biznesowi").show();
-        $("#rozwody").show();
-        $("#biezace_problemy").show();
-        $("#it").show();
-        $("#prawo_budowlane").show();*/
     });
 
     $("#rozwody").click(function () {
@@ -190,6 +179,11 @@ $(document).ready(function () {
     $("#logo").click(function () {
         ukryj();
     });
+    
+    $("#schowany_nr").click(function (event) {
+        event.stopPropagation();
+       this.innerHTML="<a href=# class=numer_tel><b>tel. 665 272 500 </b></a>";
+    });
 
 });
 
@@ -204,6 +198,7 @@ function ukryj() {
     $("#rozwijany_biezace_problemy").hide();
     $("#rozwijany_it").hide();
     $("#rozwijany_prawo_budowlane").hide();
+    $("#schowany_nr").hide();
 
     $("#foto_kasia").show();
     $("#kontakt").show();
@@ -215,5 +210,8 @@ function ukryj() {
     $("#biezace_problemy").show();
     $("#it").show();
     $("#prawo_budowlane").show();
+    $("#schowany_nr").show();
+
 
 }
+
