@@ -6,11 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="kancelaria prawna">
         <meta name="keywords" content="pomoc prawna, kancelaria"
-              <link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/webfontkit-20171205-050421/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:Regular" rel="stylesheet">
+        <meta property="og:title" content="Radca Prawny Katrzyna Lukasiewicz" />
+        <meta property="og:image" content="http://kancelarialukasiewicz.pl//miniatura_strony1.jpg" />
+        <meta property="og:url" content="http://kancelarialukasiewicz.pl/"/>
+        <meta property="og:locale" content="pl_PL" />
+        <link rel="image_src" href="http://kancelarialukasiewicz.pl//miniatura_strony1.jpg" />
         <link rel="stylesheet" href="css/main.css">
         <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/script.js"></script>
+        <script>
+            if (window.innerWidth < 319)
+            {
+                path = "js/small.js";
+            } 
+            else if (window.innerWidth < 899 && window.innerWidth > 319)
+            {
+                path = "js/bigger.js";
+            }
+            else {
+                path = "js/script.js";
+            }
+            
+            var script = document.createElement('script');
+            script.src = path;
+            var head = document.getElementsByTagName('head')[0];
+            head.appendChild(script);
+            
+        </script>
     </head>
     <body>
         <div class="container">
@@ -34,9 +57,9 @@
                         <p class="ente2"></p>
                         <p>ul. Bagatela 10 lok. 6 <br/>
                         00 – 585 Warszawa <br/></p>               
-                        <p class="ente"></p> 
+                        <br />
                         <span id="schowany_nr"><b>tel. 665 Wyświetl numer</b></span>
-                        <p class="ente"></p>
+                        <br />
                         <a href="mailto:kancelaria@kancelarialukasiewicz.pl"><p  class="email">email: kancelaria(at)kancelarialukasiewicz.pl</p></a>
                         </div>
                 </div>
@@ -47,32 +70,36 @@
                 <div id="rozwijany_o_kancelarii">
                     <img src="images/krzyzyk.png" alt="krzyzyk zamykajacy otwarte okienko">
                     <h3>O Kancelarii</h3>
+                    <div id="radca"><b><h4>Radca prawny Katarzyna Łukasiewicz</h4></b></div>
+                    <main>Założycielka Kancelarii. Specjalizuje się w prawie procesowym, jako pełnomocnik występowała w kilkuset sprawach sądowych. Współpracuje z telewizją POLSAT jako ekspert w programie Interwencja. Wyróżniona przez Okręgową Izbę Radców Prawnych w Warszawie medalem w uznaniu zaangażowania w działalność na rzecz samorządu radcowskiego.</main>
+                    <br/>
                     <h4>Empatia</h4>
-                    <p>Widzę świat oczyma innych.<br /></p>
-                        <p class="to_sprawia"><br/></p>
-                        <p>To sprawia, że potrafię się postawić w Twojej nawet najtrudniejszej sytuacji. </p>
+                    <p class="to_sprawia"></p>
+                    <p>Widzę świat oczyma innych.</p>
+                    <p>To sprawia, że potrafię się postawić w Twojej nawet najtrudniejszej sytuacji.</p>
                     <h4>Rywalizacja</h4>
+                    <p class="to_sprawia"></p>
                     <p>Uwielbiam zawody, w konfrontacji interesuje mnie tylko pierwsze miejsce.<br /></p>
-                        <p class="to_sprawia"><br/></p>
-                        <p>To sprawia, że będę dla Ciebie walczyć do końca, aby wygrać.</p>
+                    <p>To sprawia, że będę dla Ciebie walczyć do końca, aby wygrać.</p>
                     <h4>Wizjoner</h4>
+                    <p class="to_sprawia"></p>
                     <p>Przewiduję co powinno i może się zdarzyć.<br /></p>
-                        <p class="to_sprawia"><br/></p>
-                        <p>To sprawia, że doskonale dobieram odpowiednie rozwiązania.</p>
+                    <p>To sprawia, że doskonale dobieram odpowiednie rozwiązania.</p>
                     <h4>Indywidualizacja</h4>
+                    <p class="to_sprawia"></p>
                     <p>Wiem, że to co pasuje jednej osobie, nie pasuje innej.<br />
-                        <p class="to_sprawia"><br/></p>
-                        <p>To sprawia, że moje działania będą dokładnie dostosowane do Twoich potrzeb.</p>
+                    <p>To sprawia, że moje działania będą dokładnie dostosowane do Twoich potrzeb.</p>
                     <h4>Strateg</h4>
+                    <p class="to_sprawia"></p>
                     <p>Zawsze lubię mieć plan B, a nawet C i D.<br />
-                        <p class="to_sprawia"><br/></p>
-                        <p>To sprawia, że ułożę dla Ciebie najlepszą strategię procesową.<br />
+                    <p>To sprawia, że ułożę dla Ciebie najlepszą strategię procesową.<br />
                         Poprowadzę Cię za rękę na każdym etapie postępowania sądowego.</p>
-                    <div id="radca"><b><h4>Radca prawny Katarzyna Łukasiewicz,</h4></b></div>
-                    <main>założycielka Kancelarii. Specjalizuje się w prawie procesowym, jako pełnomocnik występowała w kilkuset sprawach sądowych. Współpracuje z telewizją POLSAT jako ekspert w programie Interwencja. Wyróżniona przez Okręgową Izbę Radców Prawnych w Warszawie medalem w uznaniu zaangażowania w działalność na rzecz samorządu radcowskiego.</main>
                     <p class="gallup">5 talentów dominujących radcy prawnego Katarzyny Łukasiewicz według testu Instytutu Gallupa – Clifton Strengths (StrengthsFinder)</p>
                 </div>
                 <div id="sentencja">
+                    <p>Celuję w wygraną.</p>
+                </div>
+                <div id="sentencja2">
                     <p>Celuję w wygraną.</p>
                 </div>
             </div>
@@ -90,7 +117,7 @@
                             <div class="column">
                                 <p>Nasza współpraca będzie przebiegała w następujący sposób:</p>
                                     <ul>
-                                        <li>wstępne zapoznanie się ze sprawą w formie bezpłatnej porady prawnej,</li>
+                                        <li>wstępne zapoznanie się ze sprawą w formie <b>bezpłatnej porady prawnej</b>,</li>
                                         <li>zawarcie umowy o pomoc prawną,</li>
                                         <li>analiza sprawy, w tym przedstawionych dowodów,</li>
                                         <li>diagnoza problemu,</li>
@@ -149,11 +176,9 @@
                                 </ul>    
                         </div>
                         <div class="column">
-                            <p class="ente"></p>
                             <p>Pomagam zarówno wykonawcom jak i podwykonawcom. <br/>Znam branżę budowlaną i jej specyfikę.<br/>
-                                Dzięki temu wiem jak wiele zagrożeń wpływa na opóźnienie realizacji inwestycji. <b>Wiem, co oznaczają zatory płatnicze dla podwykonawców i co się z nimi wiąże</b>.<br/> 
-                                <p class="ente"></p>
-                                <p>Pomogę Twojej firmie uniknąć tego ryzyka.</p>
+                                Dzięki temu wiem jak wiele zagrożeń wpływa na opóźnienie realizacji inwestycji. <b>Wiem, czym dla podwykonawców są zatory płatnicze</b>.<br/>
+                                <p class="ente">Pomogę Twojej firmie uniknąć tego ryzyka.</p>
                         </div>
                     </div> 
                 </div>
@@ -215,7 +240,7 @@
                     <p>Rozwody <br/>i sprawy rodzinne</p>
                 </div>
                 <div id="biezace_problemy">
-                    <p>Bieżące problemy prawne</p>
+                    <p>Bieżące problemy<br /> prawne</p>
                 </div>
                 <div id="it">
                     <p>IT</p>    

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     $("#foto_kasia").click(function () {
         ukryj();
         $("#rozwijane_foto").show();
@@ -62,9 +62,9 @@ $(document).ready(function () {
         $("#rozwijany_klienci_indywidualni").show();
         $("#klienci_indywidualni").hide();
         $("#klienci_biznesowi").hide();
-      /*$("#rozwody").hide();
+        /*$("#rozwody").hide();
         $("#biezace_problemy").hide();
-        $("#it").hide();
+        ("#it").hide();
         $("#prawo_budowlane").hide();*/
     });
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
         $("#rozwijany_klienci_indywidualni").hide();
         $("#klienci_indywidualni").show();
         $("#klienci_biznesowi").show();
-      /*$("#rozwody").show();
+        /*$("#rozwody").show();
         $("#biezace_problemy").show();
         $("#it").show();
         $("#prawo_budowlane").show();*/
@@ -92,29 +92,29 @@ $(document).ready(function () {
     $("#rozwody").click(function () {
         ukryj();
         $("#rozwijany_rozwody").show();
-        $("#klienci_indywidualni").hide();
-        $("#klienci_biznesowi").hide();
+        /*$("#klienci_indywidualni").hide();
+        $("#klienci_biznesowi").hide();*/
         $("#rozwody").hide();
         $("#biezace_problemy").hide();
-        /*$("#it").hide();
-        $("#prawo_budowlane").hide();*/
+        $("#it").hide();
+        $("#prawo_budowlane").hide();
     });
 
     $("#rozwijany_rozwody").click(function () {
         ukryj();
         $("#rozwijany_rozwody").hide();
-        $("#klienci_indywidualni").show();
-        $("#klienci_biznesowi").show();
         $("#rozwody").show();
+        /*$("#klienci_indywidualni").show();
+        $("#klienci_biznesowi").show();*/
         $("#biezace_problemy").show();
-        /*$("#it").show();
-        $("#prawo_budowlane").show();*/
+        $("#it").show();
+        $("#prawo_budowlane").show();
     });
     $("#biezace_problemy").click(function () {
         ukryj();
         $("#rozwijany_biezace_problemy").show();
-        $("#klienci_indywidualni").hide();
-        $("#klienci_biznesowi").hide();
+        /*$("#klienci_indywidualni").hide();
+        $("#klienci_biznesowi").hide();*/
         $("#rozwody").hide();
         $("#biezace_problemy").hide();
         $("#it").hide();
@@ -125,8 +125,8 @@ $(document).ready(function () {
         ukryj();
         $("#rozwijany_biezace_problemy").hide();
         $("#rozwody").show();
-        $("#klienci_indywidualni").show();
-        $("#klienci_biznesowi").show();
+        /*$("#klienci_indywidualni").show();
+        $("#klienci_biznesowi").show();*/
         $("#biezace_problemy").show();
         $("#it").show();
         $("#prawo_budowlane").show();
@@ -136,7 +136,7 @@ $(document).ready(function () {
         ukryj();
         $("#rozwijany_it").show();
         $("#klienci_indywidualni").hide();
-        $("#klienci_biznesowi").hide();
+        /*$("#klienci_biznesowi").hide();*/
         $("#rozwody").hide();
         $("#biezace_problemy").hide();
         $("#it").hide();
@@ -148,7 +148,7 @@ $(document).ready(function () {
         $("#rozwijany_it").hide();
         $("#rozwody").show();
         $("#klienci_indywidualni").show();
-        $("#klienci_biznesowi").show();
+        /*$("#klienci_biznesowi").show();*/
         $("#biezace_problemy").show();
         $("#it").show();
         $("#prawo_budowlane").show();
@@ -157,7 +157,7 @@ $(document).ready(function () {
     $("#prawo_budowlane").click(function () {
         ukryj();
         $("#rozwijany_prawo_budowlane").show();
-        $("#klienci_indywidualni").hide();
+        /*$("#klienci_indywidualni").hide();*/
         $("#klienci_biznesowi").hide();
         $("#rozwody").hide();
         $("#biezace_problemy").hide();
@@ -170,7 +170,7 @@ $(document).ready(function () {
         $("#rozwijany_prawo_budowlane").hide();
         $("#rozwody").show();
         $("#klienci_indywidualni").show();
-        $("#klienci_biznesowi").show();
+     /*  $("#klienci_biznesowi").show();*/
         $("#biezace_problemy").show();
         $("#it").show();
         $("#prawo_budowlane").show();
@@ -182,7 +182,7 @@ $(document).ready(function () {
     
     $("#schowany_nr").click(function (event) {
         event.stopPropagation();
-       this.innerHTML="<a href='tel:+48665272500' class=numer_tel><b>tel. 665 272 500</b></a>";
+       this.innerHTML="<a href='tel:+48665272500'class=numer_tel><b>tel. 665 272 500</a></b>";
     });
     
     $("#sentencja").click(function () {
@@ -191,6 +191,7 @@ $(document).ready(function () {
         $("#sentencja2").show();
     });
 });
+
 
 function ukryj() {
 
@@ -219,3 +220,4 @@ function ukryj() {
     $("#schowany_nr").show();
     $("#sentencja2").show();
 }
+
